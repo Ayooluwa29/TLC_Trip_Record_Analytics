@@ -1,8 +1,8 @@
 import pandas as pd
 import os
 from sqlalchemy import create_engine, engine
+
 #Configure Postgres Destination
-psql_conn = create_engine('postgresql+psycopg2://postgres:123password@localhost:5432/tlc_trip')
 files_folder = r"C:\Users\ajesuniyi\Documents\TLC_Trip"
 
 
