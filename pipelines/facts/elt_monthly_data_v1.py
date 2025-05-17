@@ -45,7 +45,7 @@ with DW_ENGINE.begin() as conn:
                 first_file_processed = True
 
             try:
-                df.to_sql(table_name, conn, schema=TARGET_SCHEMA, if_exists="append", index=False)
+                df.to_sql(table_name, conn, schema=TARGET_SCHEMA, if_exists="append", index=False, chunksize= 10000)
                 print(f"Loaded {len(df)} records from {filename} into {table_name_with_schema}.")
             except Exception as e:
                 print(f"Failed to load data from {filename} into {table_name_with_schema}: {e}")
