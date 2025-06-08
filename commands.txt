@@ -1,0 +1,17 @@
+docker ps -> check container that are running
+docker start ->
+docker stop ->
+docker compose down --volumes ->
+docker compose up -d ->
+
+git clone 'repo_url' ->
+git pull ->
+git add . ->
+git commit -m 'commit message'->
+git merge ->
+git rebase ->
+git clone -b branch_name --single-branch 'repo_url' ->
+git init ->
+git push ->
+git remote add origin 'remote repo_url' ->
+git remote set-url origin git@github.com:username/repo.git
